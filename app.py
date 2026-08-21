@@ -34,6 +34,26 @@ def contact():
 def admin():
     return render_template('admin.html')
 
+@app.route('/admin-foodcat')
+def adminFoodCat():
+    return render_template('admin_foodcat.html')
+
+@app.route('/admin-food')
+def adminFood():
+    return render_template('admin_food.html')
+
+@app.route('/admin-bonus')
+def adminBonus():
+    return render_template('admin_bonus.html')
+
+@app.route('/admin-tables')
+def adminTables():
+    return render_template('admin_tables.html')
+
+@app.route('/admin-recommended')
+def adminRecommended():
+    return render_template('admin_recommended.html')
+
 if __name__ == '__main__':
  #   with app.app_context():
   #      db.create_all()

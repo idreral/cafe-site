@@ -1,7 +1,8 @@
 <ul>
-  <li><a href="#">Категории меню</a></li>
-  <li><a href="#">Блюда</a></li>
-  <li><a href="#">Бонусная программа</a></li>
-  <li><a href="#">Заказы столиков</a></li>
-  <li><a href="#">Рекомендуемые блюда</a></li>
+  <li><a href="{{ url_for('admin') }}">Статистика</li>
+  <li><a href="{{ url_for('adminFoodCat') }}">Категории меню</a></li>
+  <li><a href="{{ url_for('adminFood') }}">Блюда</a></li>
+  <li><a href="{{ url_for('adminBonus') }}">Бонусная программа</a></li>
+  <li><a href="{{ url_for('adminTables') }}">Заказы столиков</a></li>
+  <li><a href="{{ url_for('adminRecommended') }}">Рекомендуемые блюда</a></li>
 </ul>
