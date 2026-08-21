@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}Admin panel{% endblock %}</title>
+    <style>
+      .container{
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+      }
+      .left {
+        flex-shrink: 0;
+      }
+      .right {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        {% block aside %}{% include 'admin_sidemenu.html' %}{% endblock %}
+      </div>
+      <div class="right">
+        agsodkfgpaokewfkop
+      </div>
+    </div>
+  </body>
+</html>
